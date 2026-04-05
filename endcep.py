@@ -8,6 +8,8 @@ from selenium.webdriver.common.by import By
 
 def esperar_arquivo_por_nome(parte_nome, pasta, timeout=60):
     import os, time
+    nome_ren = 'cofap_dados.csv'
+    arq_ren = os.path.join(download_path, nome_ren)
 
     tempo_inicial = time.time()
 
@@ -18,7 +20,9 @@ def esperar_arquivo_por_nome(parte_nome, pasta, timeout=60):
         temporarios = [f for f in arquivos if parte_nome in f and f.endswith(".crdownload")]
 
         if candidatos and not temporarios:
-            return candidatos[0]
+            arq_down= os.path.join(download_path, candidatos[0])
+            os.replace(arq_down, arq_ren)
+            return arq_ren
 
         if time.time() - tempo_inicial > timeout:
             raise TimeoutError("Arquivo não encontrado")
