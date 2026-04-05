@@ -11,6 +11,6 @@ df_semcep = df[
 ]
 
 #print(df.info())
-print(df_semcep["cep"])
+print(df_semcep[["endereco","cep"]])
 print(len(df))
 print(len(df_semcep))
