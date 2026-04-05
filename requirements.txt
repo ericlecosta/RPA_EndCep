@@ -1,0 +1,5 @@
+botcity-framework-web
+botcity-maestro-sdk>=0.5.1,<1.0
+webdriver-manager
+selenium==4.10.0
+setuptools
