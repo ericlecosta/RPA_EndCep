@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_989edb3834aada05c2294835ea628188 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_989edb3834aada05c2294835ea628188" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_989edb3834aada05c2294835ea628188 = L.map(
+                "map_989edb3834aada05c2294835ea628188",
+                {
+                    center: [-1.163290095, -63.13354674500001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a0e8a546a10b8057bd9eef579452dd3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a0e8a546a10b8057bd9eef579452dd3.addTo(map_989edb3834aada05c2294835ea628188);
+        
+    
+            var marker_cluster_fdd861556a8f6d357e174738147443e8 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_daff889b0cf4498d11fcbb1d6cf5fd17 = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_ea7780230d8038a513d3b2add0c93852 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53d812d12bd708a832337cc5e2b0c94d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a04d58b19e2266ed41a5af835c88a05 = $(`<div id="html_0a04d58b19e2266ed41a5af835c88a05" style="width: 100.0%; height: 100.0%;">RUA MUXINGA, 193, JORGE TEIXEIRA, 69088144</div>`)[0];
+                popup_53d812d12bd708a832337cc5e2b0c94d.setContent(html_0a04d58b19e2266ed41a5af835c88a05);
+            
+        
+
+        marker_daff889b0cf4498d11fcbb1d6cf5fd17.bindPopup(popup_53d812d12bd708a832337cc5e2b0c94d)
+        ;
+
+        
+    
+    
+                marker_daff889b0cf4498d11fcbb1d6cf5fd17.setIcon(icon_ea7780230d8038a513d3b2add0c93852);
+            
+    
+            var marker_418dfc0ffd25a9aa5c9168206a07bccf = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_e1db06a39165b21e112151a9671f4228 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a96cc88bde0dcb589a0317557ec26ff6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dada8e01ae84e90cb228735cbf86fd6 = $(`<div id="html_4dada8e01ae84e90cb228735cbf86fd6" style="width: 100.0%; height: 100.0%;">RUA DOS TREVOS, 3, JORGE TEIXEIRA, 69088460</div>`)[0];
+                popup_a96cc88bde0dcb589a0317557ec26ff6.setContent(html_4dada8e01ae84e90cb228735cbf86fd6);
+            
+        
+
+        marker_418dfc0ffd25a9aa5c9168206a07bccf.bindPopup(popup_a96cc88bde0dcb589a0317557ec26ff6)
+        ;
+
+        
+    
+    
+                marker_418dfc0ffd25a9aa5c9168206a07bccf.setIcon(icon_e1db06a39165b21e112151a9671f4228);
+            
+    
+            var marker_f695c28e1226012517317cf60d9986ac = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_27ccf33decd3bd05fb10bc48caa561b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c81a62c0fe58fe223d5b5943a7c3c81a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_224c1744698c16737e2c69026b79bc0c = $(`<div id="html_224c1744698c16737e2c69026b79bc0c" style="width: 100.0%; height: 100.0%;">RUA CARAJURU, 634, JORGE TEIXEIRA, 69088065</div>`)[0];
+                popup_c81a62c0fe58fe223d5b5943a7c3c81a.setContent(html_224c1744698c16737e2c69026b79bc0c);
+            
+        
+
+        marker_f695c28e1226012517317cf60d9986ac.bindPopup(popup_c81a62c0fe58fe223d5b5943a7c3c81a)
+        ;
+
+        
+    
+    
+                marker_f695c28e1226012517317cf60d9986ac.setIcon(icon_27ccf33decd3bd05fb10bc48caa561b3);
+            
+    
+            var marker_0158653d614d190305d15ad0193b018a = L.marker(
+                [-3.0274816, -59.9175434],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_284b9677f6ce3a66a53c4487d1209673 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93adf48434e260fc5c9699e220847bfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0c75419328e26bbaaaf5464d508f1e5 = $(`<div id="html_b0c75419328e26bbaaaf5464d508f1e5" style="width: 100.0%; height: 100.0%;">RAMAL RUA TOCA DO COELHO, 15, JORGE TEIXEIRA, 69088000</div>`)[0];
+                popup_93adf48434e260fc5c9699e220847bfe.setContent(html_b0c75419328e26bbaaaf5464d508f1e5);
+            
+        
+
+        marker_0158653d614d190305d15ad0193b018a.bindPopup(popup_93adf48434e260fc5c9699e220847bfe)
+        ;
+
+        
+    
+    
+                marker_0158653d614d190305d15ad0193b018a.setIcon(icon_284b9677f6ce3a66a53c4487d1209673);
+            
+    
+            var marker_ff637d9a8eebb6aa85c6f06af0cc45dd = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_85a68f26cf39a1671f26a72b5a5aec09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86a62176c845f12f11caf9a0da1f56f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94765ec99a993e4ca47c54b93c82d923 = $(`<div id="html_94765ec99a993e4ca47c54b93c82d923" style="width: 100.0%; height: 100.0%;">RUA MANGARATUBA, 277, JORGE TEIXEIRA, 69088233</div>`)[0];
+                popup_86a62176c845f12f11caf9a0da1f56f7.setContent(html_94765ec99a993e4ca47c54b93c82d923);
+            
+        
+
+        marker_ff637d9a8eebb6aa85c6f06af0cc45dd.bindPopup(popup_86a62176c845f12f11caf9a0da1f56f7)
+        ;
+
+        
+    
+    
+                marker_ff637d9a8eebb6aa85c6f06af0cc45dd.setIcon(icon_85a68f26cf39a1671f26a72b5a5aec09);
+            
+    
+            var marker_1f4f2337b2e60fb8d21c306b59e0b25f = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_c2592a17d67aca61a7355b0a8a32d8fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fe1c25d32d29f8694bccf95b7a0625d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdf188814d3636739660506f2ccbd9c8 = $(`<div id="html_cdf188814d3636739660506f2ccbd9c8" style="width: 100.0%; height: 100.0%;">RUA PRECIOSAS, 64, JORGE TEIXEIRA, 69088350</div>`)[0];
+                popup_2fe1c25d32d29f8694bccf95b7a0625d.setContent(html_cdf188814d3636739660506f2ccbd9c8);
+            
+        
+
+        marker_1f4f2337b2e60fb8d21c306b59e0b25f.bindPopup(popup_2fe1c25d32d29f8694bccf95b7a0625d)
+        ;
+
+        
+    
+    
+                marker_1f4f2337b2e60fb8d21c306b59e0b25f.setIcon(icon_c2592a17d67aca61a7355b0a8a32d8fd);
+            
+    
+            var marker_80ce1081656f4c3bdc844a9d405fd9c9 = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_7c7fa4309dd11d50b789a10919d32a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80e70a11b68e8e0d1f787d1a44feff81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1f68a0a44fd98baa51e11a4c346adaf = $(`<div id="html_c1f68a0a44fd98baa51e11a4c346adaf" style="width: 100.0%; height: 100.0%;">RUA SABUGUEIRO, 38, JORGE TEIXEIRA, 69088557</div>`)[0];
+                popup_80e70a11b68e8e0d1f787d1a44feff81.setContent(html_c1f68a0a44fd98baa51e11a4c346adaf);
+            
+        
+
+        marker_80ce1081656f4c3bdc844a9d405fd9c9.bindPopup(popup_80e70a11b68e8e0d1f787d1a44feff81)
+        ;
+
+        
+    
+    
+                marker_80ce1081656f4c3bdc844a9d405fd9c9.setIcon(icon_7c7fa4309dd11d50b789a10919d32a3b);
+            
+    
+            var marker_e99d1dac4e3687b0a450b035e6515f4f = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_48f07e478c4d649b934f237b9909f0f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1757e93599ece85eae3eca365ef719bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5679954a80afb576d2fb079b522e6ae = $(`<div id="html_a5679954a80afb576d2fb079b522e6ae" style="width: 100.0%; height: 100.0%;">RUA CASCA PRECIOSA, 342, JORGE TEIXEIRA, 69088149</div>`)[0];
+                popup_1757e93599ece85eae3eca365ef719bc.setContent(html_a5679954a80afb576d2fb079b522e6ae);
+            
+        
+
+        marker_e99d1dac4e3687b0a450b035e6515f4f.bindPopup(popup_1757e93599ece85eae3eca365ef719bc)
+        ;
+
+        
+    
+    
+                marker_e99d1dac4e3687b0a450b035e6515f4f.setIcon(icon_48f07e478c4d649b934f237b9909f0f4);
+            
+    
+            var marker_c9da0dee2af734c766edf6c540f21449 = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_e3e816e12022a4af3f2053996135cd9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31ee0aa3b5e75aef72c4aea944dac25e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_642d1d53950c7183bc3aad4ef06c8b06 = $(`<div id="html_642d1d53950c7183bc3aad4ef06c8b06" style="width: 100.0%; height: 100.0%;">RUA CAMU-CAMU, 05, JORGE TEIXEIRA, 69088075</div>`)[0];
+                popup_31ee0aa3b5e75aef72c4aea944dac25e.setContent(html_642d1d53950c7183bc3aad4ef06c8b06);
+            
+        
+
+        marker_c9da0dee2af734c766edf6c540f21449.bindPopup(popup_31ee0aa3b5e75aef72c4aea944dac25e)
+        ;
+
+        
+    
+    
+                marker_c9da0dee2af734c766edf6c540f21449.setIcon(icon_e3e816e12022a4af3f2053996135cd9b);
+            
+    
+            var marker_5bf916ab3c8bcac09b9a8ca9732b5a99 = L.marker(
+                [1.1833206, -66.9692207],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_4e5ddaaa065a8a33e54779c5301bd1eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e0aeaca23b1c11d88945b6635c8e49b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cca4df808f7ee4ff96d1f904f30f157f = $(`<div id="html_cca4df808f7ee4ff96d1f904f30f157f" style="width: 100.0%; height: 100.0%;">RUA PIRARUCU, 789, JORGE TEIXEIRA, 69088765</div>`)[0];
+                popup_2e0aeaca23b1c11d88945b6635c8e49b.setContent(html_cca4df808f7ee4ff96d1f904f30f157f);
+            
+        
+
+        marker_5bf916ab3c8bcac09b9a8ca9732b5a99.bindPopup(popup_2e0aeaca23b1c11d88945b6635c8e49b)
+        ;
+
+        
+    
+    
+                marker_5bf916ab3c8bcac09b9a8ca9732b5a99.setIcon(icon_4e5ddaaa065a8a33e54779c5301bd1eb);
+            
+    
+            var marker_558d7ad83248abbe61527d276651828f = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_0abbda7a5286a12d19a9fa56bb557093 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14ce4ee6b42c0f7e519e6ea68b97fb2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b30a69e7de8289d60012382add150550 = $(`<div id="html_b30a69e7de8289d60012382add150550" style="width: 100.0%; height: 100.0%;">RUA FAROL DE ALEXANDRIA, 66, JORGE TEIXEIRA</div>`)[0];
+                popup_14ce4ee6b42c0f7e519e6ea68b97fb2b.setContent(html_b30a69e7de8289d60012382add150550);
+            
+        
+
+        marker_558d7ad83248abbe61527d276651828f.bindPopup(popup_14ce4ee6b42c0f7e519e6ea68b97fb2b)
+        ;
+
+        
+    
+    
+                marker_558d7ad83248abbe61527d276651828f.setIcon(icon_0abbda7a5286a12d19a9fa56bb557093);
+            
+    
+            var marker_8a1a3c212a4824f38c82c63a79232283 = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_c2c652913a2b50cc0372a6ae078dac09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2ab4a05947aecb57c101dc3d35dffdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea482ad8f67b4b4068876c8d4cfc1b7c = $(`<div id="html_ea482ad8f67b4b4068876c8d4cfc1b7c" style="width: 100.0%; height: 100.0%;">RUA MONTE DOS CAPUCHINHOS, 1116, JORGE TEIXEIRA</div>`)[0];
+                popup_c2ab4a05947aecb57c101dc3d35dffdd.setContent(html_ea482ad8f67b4b4068876c8d4cfc1b7c);
+            
+        
+
+        marker_8a1a3c212a4824f38c82c63a79232283.bindPopup(popup_c2ab4a05947aecb57c101dc3d35dffdd)
+        ;
+
+        
+    
+    
+                marker_8a1a3c212a4824f38c82c63a79232283.setIcon(icon_c2c652913a2b50cc0372a6ae078dac09);
+            
+    
+            var marker_5ffc9eb72faff426718f358b36f67e26 = L.marker(
+                [-3.0398994, -59.9197445],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_1c7c8e7bd3e0adf0d701fb1f506b2362 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef410c58caadf80eeeee1a607db3395c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d15910914d760c67cbd7d0fd4f625cd4 = $(`<div id="html_d15910914d760c67cbd7d0fd4f625cd4" style="width: 100.0%; height: 100.0%;">RUA MARACUJA DO MATO, 119, JORGE TEIXEIRA</div>`)[0];
+                popup_ef410c58caadf80eeeee1a607db3395c.setContent(html_d15910914d760c67cbd7d0fd4f625cd4);
+            
+        
+
+        marker_5ffc9eb72faff426718f358b36f67e26.bindPopup(popup_ef410c58caadf80eeeee1a607db3395c)
+        ;
+
+        
+    
+    
+                marker_5ffc9eb72faff426718f358b36f67e26.setIcon(icon_1c7c8e7bd3e0adf0d701fb1f506b2362);
+            
+    
+            var marker_adcad401e3bf7b0cbdcc7fc1c5d376f8 = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_66d3ea4199c7533cae78c0392f8fb2bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_167e06fee23aa739813bbab67dc7243c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3abd2fe8b2717328a92e2278bb665b1 = $(`<div id="html_f3abd2fe8b2717328a92e2278bb665b1" style="width: 100.0%; height: 100.0%;">RUA BECO BARRA DE MARICA, 36, JORGE TEIXEIRA</div>`)[0];
+                popup_167e06fee23aa739813bbab67dc7243c.setContent(html_f3abd2fe8b2717328a92e2278bb665b1);
+            
+        
+
+        marker_adcad401e3bf7b0cbdcc7fc1c5d376f8.bindPopup(popup_167e06fee23aa739813bbab67dc7243c)
+        ;
+
+        
+    
+    
+                marker_adcad401e3bf7b0cbdcc7fc1c5d376f8.setIcon(icon_66d3ea4199c7533cae78c0392f8fb2bf);
+            
+    
+            var marker_adea4d7b2375931f890585a881be90e8 = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_1eea3ee7c5320e17e628694a755cf89a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88bd7fee170bfac3e0be4eaddeb3e77d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e205e18bf97873b7459511d220c7b758 = $(`<div id="html_e205e18bf97873b7459511d220c7b758" style="width: 100.0%; height: 100.0%;">RUA AVUANTE, 92, JORGE TEIXEIRA</div>`)[0];
+                popup_88bd7fee170bfac3e0be4eaddeb3e77d.setContent(html_e205e18bf97873b7459511d220c7b758);
+            
+        
+
+        marker_adea4d7b2375931f890585a881be90e8.bindPopup(popup_88bd7fee170bfac3e0be4eaddeb3e77d)
+        ;
+
+        
+    
+    
+                marker_adea4d7b2375931f890585a881be90e8.setIcon(icon_1eea3ee7c5320e17e628694a755cf89a);
+            
+    
+            var marker_0b45b2b58af81677893fc1665311115c = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_f24e5f580c29d088f94f7065180e3150 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f92c59e72ecd01c18cd5575ff6e4fb2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4c57c15f613c6e42cf4afefc2b7f2a1 = $(`<div id="html_d4c57c15f613c6e42cf4afefc2b7f2a1" style="width: 100.0%; height: 100.0%;">RUA ARUDA, 66, JORGE TEIXEIRA</div>`)[0];
+                popup_f92c59e72ecd01c18cd5575ff6e4fb2e.setContent(html_d4c57c15f613c6e42cf4afefc2b7f2a1);
+            
+        
+
+        marker_0b45b2b58af81677893fc1665311115c.bindPopup(popup_f92c59e72ecd01c18cd5575ff6e4fb2e)
+        ;
+
+        
+    
+    
+                marker_0b45b2b58af81677893fc1665311115c.setIcon(icon_f24e5f580c29d088f94f7065180e3150);
+            
+    
+            var marker_9a379ccf22febd565e6537f70d8e2007 = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_ab397233a710b9fbfe029cbc02e45537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be7d6b028159b6a3c1c748ae938bf4b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5680451862f8f0e498642e649a8e0c0f = $(`<div id="html_5680451862f8f0e498642e649a8e0c0f" style="width: 100.0%; height: 100.0%;">RUA CAURE, 10, JORGE TEIXEIRA</div>`)[0];
+                popup_be7d6b028159b6a3c1c748ae938bf4b8.setContent(html_5680451862f8f0e498642e649a8e0c0f);
+            
+        
+
+        marker_9a379ccf22febd565e6537f70d8e2007.bindPopup(popup_be7d6b028159b6a3c1c748ae938bf4b8)
+        ;
+
+        
+    
+    
+                marker_9a379ccf22febd565e6537f70d8e2007.setIcon(icon_ab397233a710b9fbfe029cbc02e45537);
+            
+    
+            var marker_4cfdbcfe6d13cec24dd23d0bcbf96565 = L.marker(
+                [-3.0327863, -59.9106607],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_7e16f9da66ec739d3b6df91dc2847530 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57466d2ce6319038d059a603d9fad13c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0976f3d755a811819326bd45f46e43c3 = $(`<div id="html_0976f3d755a811819326bd45f46e43c3" style="width: 100.0%; height: 100.0%;">RUA ISABEL DE CASTELA, 148, JORGE TEIXEIRA</div>`)[0];
+                popup_57466d2ce6319038d059a603d9fad13c.setContent(html_0976f3d755a811819326bd45f46e43c3);
+            
+        
+
+        marker_4cfdbcfe6d13cec24dd23d0bcbf96565.bindPopup(popup_57466d2ce6319038d059a603d9fad13c)
+        ;
+
+        
+    
+    
+                marker_4cfdbcfe6d13cec24dd23d0bcbf96565.setIcon(icon_7e16f9da66ec739d3b6df91dc2847530);
+            
+    
+            var marker_e96d1f1a690f476749a5174e2935f02d = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_f3c1155a421733fcc2b10c6ae565760e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94000254ac761043205b3bb19f61dd93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c30d7831d04fb014c534996a94d192a9 = $(`<div id="html_c30d7831d04fb014c534996a94d192a9" style="width: 100.0%; height: 100.0%;">RUA MUTUM, 93, JORGE TEIXEIRA</div>`)[0];
+                popup_94000254ac761043205b3bb19f61dd93.setContent(html_c30d7831d04fb014c534996a94d192a9);
+            
+        
+
+        marker_e96d1f1a690f476749a5174e2935f02d.bindPopup(popup_94000254ac761043205b3bb19f61dd93)
+        ;
+
+        
+    
+    
+                marker_e96d1f1a690f476749a5174e2935f02d.setIcon(icon_f3c1155a421733fcc2b10c6ae565760e);
+            
+    
+            var marker_16ea065af05cdb49a5e4ff32caf7f497 = L.marker(
+                [-3.10194, -60.025],
+                {
+}
+            ).addTo(marker_cluster_fdd861556a8f6d357e174738147443e8);
+        
+    
+            var icon_ec871c31a7a0d0682c7583e48428d987 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ff57a012a8b12ca7c36d05c0c204612 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f574d3b7b0589ae4aac44cafb9ef88 = $(`<div id="html_16f574d3b7b0589ae4aac44cafb9ef88" style="width: 100.0%; height: 100.0%;">RUA A TRAVESSA G, 16, JORGE TEIXEIRA</div>`)[0];
+                popup_8ff57a012a8b12ca7c36d05c0c204612.setContent(html_16f574d3b7b0589ae4aac44cafb9ef88);
+            
+        
+
+        marker_16ea065af05cdb49a5e4ff32caf7f497.bindPopup(popup_8ff57a012a8b12ca7c36d05c0c204612)
+        ;
+
+        
+    
+    
+                marker_16ea065af05cdb49a5e4ff32caf7f497.setIcon(icon_ec871c31a7a0d0682c7583e48428d987);
+            
+    
+            marker_cluster_fdd861556a8f6d357e174738147443e8.addTo(map_989edb3834aada05c2294835ea628188);
+        
+</script>
+</html>
