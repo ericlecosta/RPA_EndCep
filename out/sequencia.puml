@@ -1,0 +1,30 @@
+@startuml RPA_End_Cep
+actor Usuario
+
+participant "main.py" as Main
+participant "download.py" as Download
+participant "processamento.py" as Proc
+participant "mapa.py" as Mapa
+
+Usuario -> Main : executar script
+
+Main -> Download : baixar_arquivo()
+Download -> Download : acessar site + baixar CSV
+Download -> Download : esperar_arquivo_por_nome()
+Download --> Main : caminho do arquivo
+
+Main -> Proc : tratar_dados(caminho)
+Proc -> Proc : ler CSV
+Proc -> Proc : tratar dados
+Proc -> Proc : geocodificar(endereco, cep)
+Proc --> Main : DataFrame com coordenadas
+
+Main -> Mapa : gerar_mapa(df)
+Mapa -> Mapa : criar mapa
+Mapa -> Mapa : adicionar marcadores
+Mapa --> Main : objeto mapa
+
+Main -> Main : salvar HTML
+
+Main --> Usuario : "Mapa gerado com sucesso"
+@enduml
