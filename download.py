@@ -33,8 +33,8 @@ def esperar_arquivo_por_nome(parte_nome, pasta, timeout=60):
 
 def baixar_arquivo():
     
-    #download_path = r"C:\projetos\RPA_EndCep"
-    download_path = r"C:\Users\Turma02\pyteste\RPA_EndCep"
+    download_path = r"C:\projetos\RPA_EndCep"
+    #download_path = r"C:\Users\Turma02\pyteste\RPA_EndCep"
     
     bot = WebBot()
     bot.browser = Browser.CHROME

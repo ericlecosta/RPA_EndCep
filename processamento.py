@@ -1,6 +1,5 @@
 import pandas as pd
 from opencage.geocoder import OpenCageGeocode
-#from geopy.exc import GeocoderTimedOut
 import time
 
 # 1 Inicializa o geocodificador
