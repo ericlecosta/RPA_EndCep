@@ -81,9 +81,9 @@ def baixar_arquivo():
 
     if bot.driver.current_url == "http://cofap.semsa/login":
         print("Redirecionado para login")
-        bot.find_element('input#cpf', by="css selector").send_keys("55821235200")
+        bot.find_element('input#cpf', by="css selector").send_keys("")
         bot.wait(1000)
-        bot.find_element('input#password', by="css selector").send_keys("12345678")
+        bot.find_element('input#password', by="css selector").send_keys("")
         bot.wait(1000)
         #bot.find_element('//button[text()="Log in"]', by="xpath").click()
         #bot.find_element('button[type="submit"]', by="css selector").click()
